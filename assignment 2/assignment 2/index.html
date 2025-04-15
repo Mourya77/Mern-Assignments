@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Task Playground</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ JavaScript Tasks ✨</h1>
+
+    <div class="task-card">
+      <label for="age">👤 Enter Age:</label>
+      <input type="number" id="age" placeholder="Enter age">
+      <button onclick="checkAdult()">Check Adult</button>
+      <p id="adultResult"></p>
+    </div>
+
+    <div class="task-card">
+      <label for="x">➕ Enter first number (x):</label>
+      <input type="number" id="x" placeholder="e.g., 5">
+      <label for="y">➗ Enter second number (y):</label>
+      <input type="number" id="y" placeholder="e.g., 3">
+      <button onclick="performOperations()">Calculate</button>
+      <p id="operationsResult"></p>
+    </div>
+
+    <div class="task-card">
+      <label for="num">🔢 Enter a Number:</label>
+      <input type="number" id="num" placeholder="Odd or Even?">
+      <button onclick="checkEvenOdd()">Check Even/Odd</button>
+      <p id="evenOddResult"></p>
+    </div>
+
+    <div class="task-card">
+      <label for="squareNum">🟪 Number to Square:</label>
+      <input type="number" id="squareNum" placeholder="e.g., 7">
+      <button onclick="calculateSquare()">Calculate Square</button>
+      <p id="squareResult"></p>
+    </div>
+
+    <div class="task-card">
+      <label for="startNum">🔁 Start Number:</label>
+      <input type="number" id="startNum" placeholder="Start value">
+      <button onclick="storeNumbers()">Store 5 Numbers</button>
+      <p id="numbersArray"></p>
+    </div>
+  </div>
+
+  <script>
+    function checkAdult() {
+      let age = document.getElementById("age").value;
+      let isAdult = age >= 18;
+      document.getElementById("adultResult").innerText = "✅ Is Adult: " + isAdult;
+    }
+
+    function performOperations() {
+      let x = parseInt(document.getElementById("x").value);
+      let y = parseInt(document.getElementById("y").value);
+      let addition = x + y;
+      let multiplication = x * y;
+      let modulus = x % y;
+      document.getElementById("operationsResult").innerText =
+        `➕ Addition: ${addition}, ✖️ Multiplication: ${multiplication}, % Modulus: ${modulus}`;
+    }
+
+    function checkEvenOdd() {
+      let n = document.getElementById("num").value;
+      let result = (n % 2 === 0) ? "Even 🟢" : "Odd 🔴";
+      document.getElementById("evenOddResult").innerText = "Result: " + result;
+    }
+
+    function calculateSquare() {
+      let num = document.getElementById("squareNum").value;
+      document.getElementById("squareResult").innerText = "⬛ Square: " + (num * num);
+    }
+
+    function storeNumbers() {
+      let numbers = [];
+      let startNum = parseInt(document.getElementById("startNum").value);
+      for (let i = 0; i < 5; i++) {
+        numbers.push(startNum + i);
+      }
+      document.getElementById("numbersArray").innerText =
+        "🧾 Numbers Stored: " + numbers.join(", ");
+    }
+  </script>
+</body>
+</html>

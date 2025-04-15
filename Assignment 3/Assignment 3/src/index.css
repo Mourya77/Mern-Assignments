@@ -1,0 +1,15 @@
+/* ✅ All @import come first! */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import "tailwindcss";
+
+/* ✅ Custom Font Utilities */
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.yeseva-font {
+  font-family: 'Yeseva One', serif;
+}

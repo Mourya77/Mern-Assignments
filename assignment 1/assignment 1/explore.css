@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.monument-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.monument-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.monument-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.monument-card h2 {
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+.monument-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #2c3e50;
+    border: 1px solid #1f2e3d;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #1a2532;
+    transform: scale(1.05);
+}
+
+
+a {
+    width: 50;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+p {
+    font-family: cursive;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-container img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.image-container h4 {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+.custom-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #2c3e50;
+    background-color: white;
+    color: #2c3e50;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid #aaa;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #34495e;
+}
